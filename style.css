@@ -11,7 +11,7 @@ body{
     max-width: 270px; /* tamanho máximo em desktop */
     width: 100%;       /* preenche até o max-width */
     height: auto;
-    margin: 20px auto 0; /* centraliza em telas pequenas */
+    margin: 20px  0; /* centraliza em telas pequenas */
     box-sizing: border-box;
 }
 
@@ -169,3 +169,14 @@ header p{
 }
 
 /* (margin-top já aplicado acima na regra `.perfil`) */
+
+.perfil-container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.perfil img{
+    justify-content: start;
+    display: flex;
+}
