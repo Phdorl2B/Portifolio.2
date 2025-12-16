@@ -3,14 +3,45 @@ body{
     background-repeat: no-repeat;
 }
 
+/* Estilo da imagem de perfil (responsivo) */
 .perfil{
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    max-width: 270px; /* tamanho máximo em desktop */
+    width: 100%;       /* preenche até o max-width */
+    height: auto;
+    margin: 20px auto 0; /* centraliza em telas pequenas */
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px){
+    .perfil{
+        max-width: 160px; /* reduz em telas pequenas */
+    }
 }
 
 .linguagens{
-    color: yellow;
-    background-color: yellow;
+    /* Container de ícones: permitir quebra e centralizar */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.linguagens img{
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+@media (max-width: 480px){
+    .linguagens img{
+        width: 40px;
+        height: 40px;
+    }
 }
 
 mark{
@@ -86,6 +117,23 @@ mark{
     }
 }
 
+/* Ajuste extra para evitar overflow e garantir que o pop-up caiba em telas muito pequenas */
+@media (max-width: 420px){
+    .content_contato{
+        position: fixed;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    .content_contato .contato-close{
+        top: 6px;
+        right: 8px;
+        font-size: 18px;
+    }
+}
+
 header h2{
     /* Tamanho responsivo para manter boa leitura em telas pequenas */
     font-size: clamp(1.25rem, 4.5vw, 2.6rem);
@@ -120,6 +168,4 @@ header p{
     text-shadow: 2px 2px 4px black;
 }
 
-.perfil{
-    margin-top: 20px;
-}
+/* (margin-top já aplicado acima na regra `.perfil`) */
