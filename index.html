@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"  crossorigin="anonymous"  />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mq.css" />
+    <link rel="shortcut icon" href="img/verify.png" type="image/x-icon">
+    <title>Meu Portifolio</title>
+</head>
+<body>
+    <header class="container text-center">
+       
+        <img src="img/perfil.jpg" alt="" class="d-flex justify-content-start perfil border-radius-25px" width="240" height="240">
+        <h1 class="lead">Paulo</p>
+        <h2>Programador Júnior <mark> Full Stack</mark> <br>Formado em Engenharia de Software</h2>
+        <p>Meu nome é Paulo, estudante de Engenharia de Software, gosto muito da area da tecnologia, procuro me especializar ainda mais e ingressar no mercado de trabalho.</p>
+        <h4>Minhas habilidades</h4>
+    </header>
+        <span class="d-flex justify-content-center gap-2 mb-4" linguagens>
+        <img src="img/icons8-html-96.png" alt=""> 
+        <img src="img/icons8-css-96 (1).png" alt="">
+        <img src="img/icons8-js-96.png" alt="">
+        <img src="img/icons8-bootstrap-96.png" alt="">
+        <img src="img/icons8-reagir-96.png" alt="">
+        <img src="img/icons8-logo-java-coffee-cup-96.png" alt="">
+
+    
+        </span>
+    <main class="container">
+        <section class="mb-5">
+            <h2>Meus Projetos</h2>
+            <div class="d-flex gap-3 flex-wrap">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/alura.jpg" class="card-img-top" alt="Projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Alura</h5>
+                        <p class="card-text">Landing page longa com ilustrações e descrições. <br>CSS HTML</p>
+                        <a href="https://phdorl2b.github.io/AluraPlusCurso/" class="btn btn-primary">Ver projeto</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/gym.jpg" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso de jogos</h5>
+                        <p class="card-text">Um site que te ensina a jogar Fortnite, e como melhorar. <br>CSS HTML JS</p>
+                        <a href="https://phdorl2b.github.io/Fortnite-Gym/" class="btn btn-primary">Ver projeto</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/car.jpg" class="card-img-top" alt="Projeto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Loja de Carros</h5>
+                        <p class="card-text">Página de venda de carros com informações. <br> CSS HTML JS.</p>
+                        <a href="https://phdorl2b.github.io/Projeto-DevClub/" class="btn btn-primary">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/19eb3681-f9b7-472c-bee1-631dedca5114.jpg" class="card-img-top" alt="Projeto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Extra</h5>
+                        <p class="card-text">Outro projeto de demonstração. <br>HTML CSS</p>
+                        <a href="https://phdorl2b.github.io/Landing-Page-treino/" class="btn btn-primary">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer>
+                 <div class="content_contato" id="content_contato" role="dialog" aria-labelledby="contato_title" aria-live="polite">
+                        <button id="contato_close" class="contato-close" aria-label="Fechar contato">&times;</button>
+                        <h2 class="contato" id="contato_title">Entre em contato</h2>
+                        <p class="mb-1">E-mail: <a href="mailto:seuemail@exemplo.com">Paulllos38@outlook.com</a></p>
+                        <p class="mb-2">Telefone: <a href="tel:+5511999999999">+55 (16) 99775-2795</a></p>
+                        <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#sent?compose=lqrsljbfLskHJnvtmwfnTKkRRMGQwMdzrgDzWLGvZtKBchSpmbKPZTHvzpTZkcBDdZvlLHnklFqwLCWKp target" target="_blank"  class="btn btn-primary btn-sm">Enviar e-mail</a>
+                </div>
+
+        </footer>
+
+        <script>
+            (function(){
+                const popup = document.getElementById('content_contato');
+                const btn = document.getElementById('contato_close');
+                if(!popup || !btn) return;
+                btn.addEventListener('click', function(){
+                    popup.style.display = 'none';
+                    popup.setAttribute('aria-hidden', 'true');
+                });
+            })();
+        </script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body{
+    background-image: linear-gradient( rgb(110, 30, 110), purple 45%, white 85%);
+    background-repeat: no-repeat;
+}
+
+.linguagens{
+    color: yellow;
+    background-color: yellow;
+}
+
+mark{
+    background-color: rgb(201, 151, 59);
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.contato{
+    background-color: rgb(201, 151, 59);
+    justify-content: end;
+    width: 50%;
+    border-radius: 25px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    color: white;
+}
+
+.content_contato{
+    /* Pop-up fixo */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 320px;
+    max-width: calc(100% - 40px);
+    background: rgba(255, 255, 255, 0.98);
+    color: #111;
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    transform: translateY(6px);
+    animation: popUp 260ms ease-out forwards;
+}
+
+@keyframes popUp {
+    from { opacity: 0; transform: translateY(18px) scale(.99); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.content_contato .contato-close{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    color: #444;
+}
+.content_contato .contato-close:focus{
+    outline: 2px solid rgba(0,0,0,0.15);
+    border-radius: 6px;
+}
+
+@media (max-width: 480px){
+    .content_contato{
+        left: 12px;
+        right: 12px;
+        width: auto;
+        padding: 12px;
+    }
+}
+
+header h2{
+    /* Tamanho responsivo para manter boa leitura em telas pequenas */
+    font-size: clamp(1.25rem, 4.5vw, 2.6rem);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px black;
+}
+
+.lead{
+    /* Usar tamanho responsivo para ficar legível em mobile */
+    font-size: clamp(1.6rem, 6vw, 3rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    text-shadow: 1px 1px 2px black;
+}
+
+header h4{
+    font-size: clamp(1rem, 3.2vw, 1.8rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(192, 155, 31);
+    text-shadow: 1px 1px 2px black;
+}
+
+header p{
+    /* Tamanho responsivo para manter boa leitura em telas pequenas */
+    font-size: clamp(0.6rem, 2.8vw, 1.2rem);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px black;
+}
+
+.perfil{
+    margin-top: 20px;
+}
