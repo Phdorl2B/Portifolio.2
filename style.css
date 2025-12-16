@@ -3,6 +3,11 @@ body{
     background-repeat: no-repeat;
 }
 
+.perfil{
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .linguagens{
     color: yellow;
     background-color: yellow;
